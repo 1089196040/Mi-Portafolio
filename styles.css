@@ -1,0 +1,204 @@
+/* Reset CSS básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilo del menú principal */
+nav {
+  background: #282c34;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para secciones */
+section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+/* Estilo de encabezados */
+h2 {
+  border-bottom: 2px solid #61dafb;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #282c34;
+}
+
+/* Estilos de imágenes */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #61dafb;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Redes sociales */
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #61dafb;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #21a1f1;
+}
+
+/* Datos personales */
+.personal-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.personal-info p {
+  margin: 0.5rem 0;
+}
+
+/* Estilos de skills y hobbies */
+.skills, .hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill-item, .hobby-item {
+  text-align: center;
+  width: 120px;
+  margin: 1rem;
+}
+
+.skill-item i, .hobby-item i {
+  font-size: 2rem;
+  color: #61dafb;
+}
+
+/* Sección de educación */
+.education-list {
+  margin: 1.5rem 0;
+}
+
+.education-item {
+  margin-bottom: 1rem;
+}
+
+/* Sección de proyectos */
+.project-item {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.project-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-item h3 {
+  color: #282c34;
+}
+
+.button {
+  display: inline-block;
+  background: #61dafb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #21a1f1;
+}
+
+/* Estilos del formulario de contacto */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #61dafb;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #21a1f1;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .skills, .hobbies {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skill-item, .hobby-item {
+      width: 80%;
+      margin: 0.5rem 0;
+  }
+}
