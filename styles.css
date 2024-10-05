@@ -115,15 +115,6 @@ h2 {
   color: #61dafb;
 }
 
-/* Sección de educación */
-.education-list {
-  margin: 1.5rem 0;
-}
-
-.education-item {
-  margin-bottom: 1rem;
-}
-
 /* Sección de proyectos */
 .project-item {
   margin-bottom: 2rem;
@@ -155,6 +146,7 @@ h2 {
 .button:hover {
   background: #21a1f1;
 }
+
 
 /* Estilos del formulario de contacto */
 form {
@@ -200,5 +192,63 @@ form button:hover {
   .skill-item, .hobby-item {
       width: 80%;
       margin: 0.5rem 0;
+  }
+}
+
+.education-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.education-item {
+  flex: 1 1 calc(45% - 20px); /* Ajustable para que se vea bien en diferentes tamaños */
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.education-item p {
+  font-size: 0.95em;
+  color: #666;
+}
+
+/* Flexbox responsive */
+@media screen and (max-width: 768px) {
+  .education-item,
+  .project-item {
+      flex: 1 1 100%;
+  }
+}
+
+/* Ajuste para pantallas pequeñas (móviles) */
+@media screen and (max-width: 480px) {
+  .education-item,
+  .project-item {
+      flex: 1 1 100%;
+      margin: 5px 0;
+  }
+
+  .button {
+      padding: 8px 15px;
+  }
+
+  h2 {
+      font-size: 1.8em;
+  }
+
+  h3 {
+      font-size: 1.2em;
+  }
+
+  p {
+      font-size: 0.9em;
   }
 }
